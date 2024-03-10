@@ -1,11 +1,11 @@
 from pathlib import Path
 
 import chainlit
-from hr_job_cv_matcher.pdf_to_text_client import extract_text_from_pdf
+from pdf_to_text_client import extract_text_from_pdf
 from langchain.schema import Document
 
-from hr_job_cv_matcher.config import cfg
-from hr_job_cv_matcher.log_init import logger
+from config import cfg
+from log_init import logger
 
 
 

@@ -1,7 +1,7 @@
 import requests
 
-from hr_job_cv_matcher.config import cfg
-from hr_job_cv_matcher.log_init import logger
+from config import cfg
+from log_init import logger
 
 
 CV = f"""Proficient and creative WordPress developer with a 2+ years of experience in 

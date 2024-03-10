@@ -4,8 +4,8 @@ import json
 
 from typing import Optional
 
-from hr_job_cv_matcher.config import cfg
-from hr_job_cv_matcher.log_init import logger
+from config import cfg
+from log_init import logger
 
 
 def extract_text_from_pdf(pdf: Path) -> Optional[str]:

@@ -7,8 +7,8 @@ from langchain.schema import HumanMessage, SystemMessage
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from langchain.chains.openai_functions import create_structured_output_chain
 
-from hr_job_cv_matcher.log_init import logger
-from hr_job_cv_matcher.config import cfg, prompt_cfg
+from log_init import logger
+from config import cfg, prompt_cfg
 
 
 HR_SYSTEM_MESSAGE = "You are an expert in human resources and you are an expert at matching skills from a job description to a CV of a candidate"

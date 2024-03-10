@@ -1,14 +1,14 @@
 from typing import List
 
-from hr_job_cv_matcher.service.test.job_description_cv_provider import CV
+from service.test.job_description_cv_provider import CV
 from langchain import LLMChain
 
 from langchain.schema import SystemMessage
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 
-from hr_job_cv_matcher.service.job_description_cv_matcher import CV_END, CV_START, PLACE_HOLDER_CV, PLACE_HOLDER_KEY
-from hr_job_cv_matcher.config import cfg
-from hr_job_cv_matcher.log_init import logger
+from service.job_description_cv_matcher import CV_END, CV_START, PLACE_HOLDER_CV, PLACE_HOLDER_KEY
+from config import cfg
+from log_init import logger
 
 from langchain.chains.openai_functions import create_structured_output_chain
 

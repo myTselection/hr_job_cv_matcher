@@ -5,8 +5,8 @@ from langchain.schema import Document
 
 import chainlit as cl
 
-from hr_job_cv_matcher.model import CandidateProfile
-from hr_job_cv_matcher.service.chart_generator import generate_chart
+from model import CandidateProfile
+from service.chart_generator import generate_chart
 
 
 async def display_uploaded_job_description(application_doc: Document):

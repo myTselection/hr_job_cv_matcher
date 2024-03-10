@@ -2,7 +2,7 @@ from typing import List
 
 import chainlit as cl
 from chainlit.input_widget import Slider, TextInput
-from hr_job_cv_matcher.service.candidate_ranking import DEFAULT_WEIGHTS
+from service.candidate_ranking import DEFAULT_WEIGHTS
 
 def create_chat_settings() -> List:
     return cl.ChatSettings(

@@ -5,8 +5,8 @@ from typing import List
 
 import matplotlib.pyplot as plt
 
-from hr_job_cv_matcher.model import CandidateProfile
-from hr_job_cv_matcher.config import cfg
+from model import CandidateProfile
+from config import cfg
 
 
 def generate_chart(sorted_candidate_profiles: List[CandidateProfile]) -> str:

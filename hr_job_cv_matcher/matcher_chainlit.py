@@ -1,32 +1,32 @@
 from pathlib import Path
 from asyncer import asyncify
-from hr_job_cv_matcher.list_utils import convert_list_to_markdown
-from hr_job_cv_matcher.model import (
+from list_utils import convert_list_to_markdown
+from model import (
     CandidateProfile,
     EducationCareerJson,
     MatchSkillsProfileJson,
     ScoreWeightsJson,
 )
-from hr_job_cv_matcher.service.candidate_ranking import (
+from service.candidate_ranking import (
     DEFAULT_WEIGHTS,
     calculate_score,
     sort_candidates,
 )
-from hr_job_cv_matcher.service.chart_generator import generate_chart
-from hr_job_cv_matcher.service.job_description_cv_matcher import (
+from service.chart_generator import generate_chart
+from service.job_description_cv_matcher import (
     MatchSkillsProfile,
     create_input_list,
     create_match_profile_chain_pydantic,
 )
-from hr_job_cv_matcher.service.education_extraction import (
+from service.education_extraction import (
     create_education_chain,
 )
-from hr_job_cv_matcher.service.social_skills_extractor import (
+from service.social_skills_extractor import (
     create_social_profile_chain,
     extract_social_skills,
 )
-from hr_job_cv_matcher.ui.chat_settings import create_chat_settings
-from hr_job_cv_matcher.ui.messages import (
+from chat_settings import create_chat_settings
+from messages import (
     display_uploaded_job_description,
     render_barchart_image,
 )
@@ -36,10 +36,10 @@ from typing import List, Dict, Tuple, Optional
 
 import chainlit as cl
 
-from hr_job_cv_matcher.document_factory import convert_to_doc
+from document_factory import convert_to_doc
 
-from hr_job_cv_matcher.log_init import logger
-from hr_job_cv_matcher.config import cfg, prompt_cfg
+from log_init import logger
+from config import cfg, prompt_cfg
 
 TIMEOUT = 1200
 LLM_AUTHOR = "LLM"

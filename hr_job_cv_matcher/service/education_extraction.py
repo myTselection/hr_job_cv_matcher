@@ -1,5 +1,5 @@
 from typing import List
-from hr_job_cv_matcher.service.test.job_description_cv_provider import (
+from service.test.job_description_cv_provider import (
     job_description_cv_provider,
 )
 
@@ -8,7 +8,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain import LLMChain
 from langchain.chains.openai_functions import create_structured_output_chain
 
-from hr_job_cv_matcher.service.job_description_cv_matcher import (
+from service.job_description_cv_matcher import (
     JOB_DESCRIPTION_START,
     JOB_DESCRIPTION_END,
     CV_START,
@@ -19,7 +19,7 @@ from hr_job_cv_matcher.service.job_description_cv_matcher import (
     prompt_factory,
 )
 
-from hr_job_cv_matcher.config import cfg
+from config import cfg
 
 
 HR_SYSTEM_MESSAGE = "You are an expert in human resources and you are an expert at extracting relevant job information and degrees from a CV based on a job description."

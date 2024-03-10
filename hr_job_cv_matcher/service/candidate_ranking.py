@@ -1,7 +1,7 @@
 from typing import Tuple, List, Dict
 
-from hr_job_cv_matcher.model import CandidateProfile, ScoreWeightsJson
-from hr_job_cv_matcher.service.test.candidate_profile_provider import create_candidate_profile
+from model import CandidateProfile, ScoreWeightsJson
+from service.test.candidate_profile_provider import create_candidate_profile
 
 
 DEFAULT_WEIGHTS = ScoreWeightsJson(2, -1, 0.5, 1, 1, 0.5)

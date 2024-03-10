@@ -4,7 +4,7 @@ import os
 from langchain.chat_models import ChatOpenAI
 from dotenv import load_dotenv
 
-from hr_job_cv_matcher.log_init import logger
+from log_init import logger
 
 load_dotenv()
 

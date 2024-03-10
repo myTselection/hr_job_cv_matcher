@@ -4,9 +4,9 @@ from typing import List
 from dataclasses import dataclass
 from langchain.schema import Document
 
-from hr_job_cv_matcher.service.job_description_cv_matcher import MatchSkillsProfile
-from hr_job_cv_matcher.service.education_extraction import EducationCareer
-from hr_job_cv_matcher.log_init import logger
+from service.job_description_cv_matcher import MatchSkillsProfile
+from service.education_extraction import EducationCareer
+from log_init import logger
 
 
 

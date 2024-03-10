@@ -1,7 +1,7 @@
 
-from hr_job_cv_matcher.service.test.job_description_cv_provider import CV
+from service.test.job_description_cv_provider import CV
 from langchain.schema import Document
-from hr_job_cv_matcher.model import CandidateProfile, EducationCareerJson, MatchSkillsProfileJson
+from model import CandidateProfile, EducationCareerJson, MatchSkillsProfileJson
 
 
 def create_candidate_profile() -> CandidateProfile:
@@ -23,5 +23,5 @@ def create_candidate_profile() -> CandidateProfile:
 
 
 if __name__ == "__main__":
-    from hr_job_cv_matcher.log_init import logger
+    from log_init import logger
     logger.info("Candidate profile: %s", create_candidate_profile())
